@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmrecwgfwcydl"]
+
+[ext_resource type="PackedScene" uid="uid://b0fxfbrxo1kxw" path="res://Assets/twin_peaks_fwwm_-_black_lodge_vr.glb" id="1_w6dqo"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_w6dqo")]

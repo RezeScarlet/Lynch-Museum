@@ -1,0 +1,115 @@
+[gd_scene load_steps=10 format=3 uid="uid://b0jemvimgri7m"]
+
+[ext_resource type="PackedScene" uid="uid://21h3oe0kq4am" path="res://Scenes/Player.tscn" id="1_r150o"]
+[ext_resource type="PackedScene" uid="uid://c7hxqtjcpq6wc" path="res://Scenes/house.tscn" id="2_idj7w"]
+[ext_resource type="PackedScene" uid="uid://bq0kia0jf36cb" path="res://Assets/skybox_of_constellations.glb" id="3_kln2b"]
+[ext_resource type="PackedScene" uid="uid://be08y6g6kpbqb" path="res://Scenes/rabbits.tscn" id="4_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://crbqhmjkgup22" path="res://Assets/base_basic_shaded.glb" id="5_pbw6q"]
+[ext_resource type="PackedScene" uid="uid://cmrecwgfwcydl" path="res://Scenes/BlackLodge.tscn" id="6_v1gob"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_idj7w"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0.115928635, 0.11045818, 0.104302034, 1)
+ground_bottom_color = Color(0.12164021, 0.09975838, 0.07513382, 1)
+ground_horizon_color = Color(0.115928635, 0.11045818, 0.104302034, 1)
+
+[sub_resource type="Sky" id="Sky_kln2b"]
+sky_material = SubResource("ProceduralSkyMaterial_idj7w")
+
+[sub_resource type="Environment" id="Environment_rgh2o"]
+background_mode = 2
+sky = SubResource("Sky_kln2b")
+tonemap_mode = 2
+sdfgi_enabled = true
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_rgh2o")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.6743023, -0.20849657, 0.7084106, 0, 0.959314, 0.28234145, -0.7384554, 0.19038348, -0.64686763, 0, 0, 0)
+light_color = Color(0.10944443, 0.14479613, 0.3664562, 1)
+light_energy = 0.5
+shadow_enabled = true
+directional_shadow_max_distance = 10.0
+
+[node name="Player" parent="." instance=ExtResource("1_r150o")]
+transform = Transform3D(0.0471587, 0, 0.9988874, 0, 1, 0, -0.9988874, 0, 0.0471587, -12.310392, 1.0491468, -19.303793)
+
+[node name="house" parent="." instance=ExtResource("2_idj7w")]
+transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, -3.653593, -1.1920929e-07, -26.840897)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape3D" parent="house/Sketchfab_model/Collada visual scene group/Material2/StaticBody3D" index="0"]
+visible = false
+
+[node name="CollisionShape3D" parent="house/Sketchfab_model/Collada visual scene group/Material314/StaticBody3D" index="0"]
+disabled = true
+
+[node name="LivingLamp" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0023735, 2.2829666, -22.891655)
+light_energy = 0.67
+light_specular = 0.0
+omni_range = 10.223
+omni_attenuation = 2.203
+
+[node name="KitchenLamp" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4521475, 2.3116102, -22.817736)
+light_energy = 0.67
+light_specular = 0.0
+omni_range = 10.223
+omni_attenuation = 2.203
+
+[node name="BedroomLamp" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.219321, 2.3750832, -15.871681)
+light_energy = 0.67
+light_specular = 0.0
+omni_range = 10.223
+omni_attenuation = 2.203
+
+[node name="BathroomLamp" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7254336, 2.3750832, -18.894043)
+light_energy = 0.67
+light_specular = 0.0
+omni_range = 10.223
+omni_attenuation = 2.203
+
+[node name="Skybox" parent="." instance=ExtResource("3_kln2b")]
+transform = Transform3D(423.585, 0, 0, 0, 423.585, 0, 0, 0, 423.585, -0.0813303, -9.536743e-07, 0.013595581)
+
+[node name="rabbits" parent="." instance=ExtResource("4_rgh2o")]
+transform = Transform3D(-0.015, 0, 2.264937e-09, 0, 0.015, 0, -2.264937e-09, 0, -0.015, -16.651367, 0, -17.454935)
+metadata/_edit_lock_ = true
+
+[node name="meshhah77_WALLS1_0" parent="rabbits/Sketchfab_model/presunto_fbx/RootNode/WALLS/meshhah77" index="0"]
+transform = Transform3D(1.6617603, -9.3173624e-21, 7.1054274e-14, -1.6940659e-21, 1.5493926, -3.5527137e-15, 1.1368684e-13, 7.1054274e-15, -0.68551165, 6.1035156e-05, -30.469957, 339)
+
+[node name="meshhah77_WALLS1_0" parent="rabbits/Sketchfab_model/presunto_fbx/RootNode/WALLS" index="12"]
+transform = Transform3D(1.6617602, -6.714207e-22, 7.1054274e-15, 1.9058241e-21, 1.4406374, -3.5527137e-15, 0, -7.509714e-15, -0.662434, -282.51855, 1.5258789e-05, 87.852905)
+
+[node name="meshhah77_WALLS1_1" parent="rabbits/Sketchfab_model/presunto_fbx/RootNode/WALLS" index="13"]
+transform = Transform3D(1.6617603, -9.150128e-22, 7.1054274e-15, 1.9058241e-21, 1.9633027, -3.5527137e-15, 5.684342e-14, -1.023425e-14, -0.6624341, -282.51843, 132.28888, 210.3695)
+
+[node name="RabbitsLamp" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.977856, 1.9204328, -20.252394)
+light_energy = 0.67
+light_specular = 0.0
+omni_range = 10.223
+omni_attenuation = 2.203
+
+[node name="RabbitsLamp2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.075143, 2.8058853, -15.2190485)
+light_energy = 0.67
+light_specular = 0.0
+omni_range = 10.223
+omni_attenuation = 2.203
+
+[node name="base_basic_shaded" parent="." instance=ExtResource("5_pbw6q")]
+transform = Transform3D(1.9938017e-07, 1.987763e-23, -1.024, -2.2737369e-16, 1.024, -2.4393659e-23, 1.024, 2.2737369e-16, 1.9938017e-07, 0.34990072, 0.49091458, -23.112656)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("6_v1gob")]
+transform = Transform3D(0.113, 0, 0, 0, 0.113, 0, 0, 0, 0.113, -6.742098, 0.52989304, -15.939674)
+
+[editable path="house"]
+[editable path="rabbits"]
