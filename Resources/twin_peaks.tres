@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://bm7u8imcfd3hb"]
+
+[ext_resource type="Texture2D" uid="uid://dumo4umrdp60r" path="res://Assets/posters/twin-peaks.webp" id="1_h4gdi"]
+[ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_js4v0"]
+
+[resource]
+script = ExtResource("2_js4v0")
+title = "Twin Peaks"
+year = 1990
+synopsis = "O agente do FBI Dale Cooper viaja para Twin Peaks com a missão de investigar o assassinato da jovem Laura Palmer. Quando chega à cidade, Cooper logo descobre que nada em Twin Peaks é o que parece ser e que o local guarda uma infinidade de segredos."
+cover_image = ExtResource("1_h4gdi")
+cast = Array[String](["Kyle MacLachlan", "Sheryl Lee", "David Lynch", "Sherilyn Fenn", "Mädchen Amick", "Dana Ashbrook"])
+metadata/_custom_type_script = "uid://cnjsfrclrf3rg"

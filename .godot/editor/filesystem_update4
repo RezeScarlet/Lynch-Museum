@@ -1,0 +1,6 @@
+res://Scenes/Player.tscn
+res://Scripts/player.gd
+res://Scenes/Main.tscn
+res://Scenes/lynch.tscn
+res://Scenes/lynch.gd
+res://Assets/inland_empire_dvd.tscn

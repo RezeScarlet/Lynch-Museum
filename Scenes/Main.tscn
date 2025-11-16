@@ -1,11 +1,19 @@
-[gd_scene load_steps=10 format=3 uid="uid://b0jemvimgri7m"]
+[gd_scene load_steps=18 format=3 uid="uid://b0jemvimgri7m"]
 
+[ext_resource type="Script" uid="uid://biq1g5cru484o" path="res://Scenes/main.gd" id="1_4kpch"]
 [ext_resource type="PackedScene" uid="uid://21h3oe0kq4am" path="res://Scenes/Player.tscn" id="1_r150o"]
+[ext_resource type="PackedScene" uid="uid://c10g216owkdbo" path="res://Scenes/MovieInfoDisplay.tscn" id="2_grg3l"]
 [ext_resource type="PackedScene" uid="uid://c7hxqtjcpq6wc" path="res://Scenes/house.tscn" id="2_idj7w"]
 [ext_resource type="PackedScene" uid="uid://bq0kia0jf36cb" path="res://Assets/skybox_of_constellations.glb" id="3_kln2b"]
+[ext_resource type="PackedScene" uid="uid://b0fgwqlvy1ro0" path="res://Assets/eraserhead_dvd.tscn" id="3_vy5pj"]
 [ext_resource type="PackedScene" uid="uid://be08y6g6kpbqb" path="res://Scenes/rabbits.tscn" id="4_rgh2o"]
-[ext_resource type="PackedScene" uid="uid://crbqhmjkgup22" path="res://Assets/base_basic_shaded.glb" id="5_pbw6q"]
+[ext_resource type="Resource" uid="uid://pagb85onejco" path="res://Resources/eraserhead.tres" id="5_1p5hy"]
 [ext_resource type="PackedScene" uid="uid://cmrecwgfwcydl" path="res://Scenes/BlackLodge.tscn" id="6_v1gob"]
+[ext_resource type="Resource" uid="uid://bm7u8imcfd3hb" path="res://Resources/twin_peaks.tres" id="7_1p5hy"]
+[ext_resource type="PackedScene" uid="uid://cyfouieh7xrq" path="res://Assets/twin_peaks_dvd.tscn" id="7_jw32o"]
+[ext_resource type="PackedScene" uid="uid://c4ve8ass1n7md" path="res://Assets/inland_empire_dvd.tscn" id="9_bmxlf"]
+[ext_resource type="Resource" uid="uid://kedfpg6yj7bc" path="res://Resources/inland_empire.tres" id="9_h1m7h"]
+[ext_resource type="PackedScene" uid="uid://ctm8korcij4df" path="res://Scenes/lynch.tscn" id="13_1p5hy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_idj7w"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -23,6 +31,9 @@ tonemap_mode = 2
 sdfgi_enabled = true
 
 [node name="Main" type="Node3D"]
+script = ExtResource("1_4kpch")
+
+[node name="MovieInfoDisplay" parent="." instance=ExtResource("2_grg3l")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rgh2o")
@@ -35,7 +46,19 @@ shadow_enabled = true
 directional_shadow_max_distance = 10.0
 
 [node name="Player" parent="." instance=ExtResource("1_r150o")]
-transform = Transform3D(0.0471587, 0, 0.9988874, 0, 1, 0, -0.9988874, 0, 0.0471587, -12.310392, 1.0491468, -19.303793)
+transform = Transform3D(-0.011047473, 0, -0.99993896, 0, 1, 0, 0.99993896, 0, -0.011047473, -2.2174501, 1.0491468, -22.935051)
+
+[node name="DVDEraserHead" parent="." groups=["Interactables"] instance=ExtResource("3_vy5pj")]
+transform = Transform3D(0.017273229, 0.7043044, -1.3153874, 1.7435174, -0.013688647, 1.2882566e-11, -0.01694002, -0.6907178, -1.3412614, -3.669797, 1.2869908, -17.338905)
+movie_data = ExtResource("5_1p5hy")
+
+[node name="DVDTwinPeaks" parent="." groups=["Interactables"] instance=ExtResource("7_jw32o")]
+transform = Transform3D(4.8540897, 0, 0, 0, 1.7765113, 0, 0, 0, 4.8540897, -6.73829, 0.95229197, -15.941737)
+movie_data = ExtResource("7_1p5hy")
+
+[node name="DVDInlandEmpire" parent="." groups=["Interactables"] instance=ExtResource("9_bmxlf")]
+transform = Transform3D(0.030999415, 0, -3.3042426, 0, 1, 0, 3.2410412, 0, 0.031603917, -18.696638, 0.6959961, -20.430702)
+movie_data = ExtResource("9_h1m7h")
 
 [node name="house" parent="." instance=ExtResource("2_idj7w")]
 transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, -3.653593, -1.1920929e-07, -26.840897)
@@ -105,10 +128,10 @@ light_specular = 0.0
 omni_range = 10.223
 omni_attenuation = 2.203
 
-[node name="base_basic_shaded" parent="." instance=ExtResource("5_pbw6q")]
+[node name="Lynch" parent="." instance=ExtResource("13_1p5hy")]
 transform = Transform3D(1.9938017e-07, 1.987763e-23, -1.024, -2.2737369e-16, 1.024, -2.4393659e-23, 1.024, 2.2737369e-16, 1.9938017e-07, 0.34990072, 0.49091458, -23.112656)
 
-[node name="Sketchfab_Scene" parent="." instance=ExtResource("6_v1gob")]
+[node name="BlackLodge" parent="." instance=ExtResource("6_v1gob")]
 transform = Transform3D(0.113, 0, 0, 0, 0.113, 0, 0, 0, 0.113, -6.742098, 0.52989304, -15.939674)
 
 [editable path="house"]

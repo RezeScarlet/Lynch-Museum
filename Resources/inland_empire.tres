@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://kedfpg6yj7bc"]
+
+[ext_resource type="Texture2D" uid="uid://d0fpkrtwwem0x" path="res://Assets/posters/inland-empire.jpg" id="1_3dkvv"]
+[ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_na0u8"]
+
+[resource]
+script = ExtResource("2_na0u8")
+title = "Inland Empire"
+year = 2007
+synopsis = "Nikki, uma atriz casada, é convidada para atuar em uma produção polonesa que foi interrompida após a morte dos protagonistas. Logo ela se envolve com o ator do filme e a realidade começa a se misturar com a ficção."
+cover_image = ExtResource("1_3dkvv")
+cast = Array[String](["Laura Dern", "Justin Theroux"])
+metadata/_custom_type_script = "uid://cnjsfrclrf3rg"

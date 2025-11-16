@@ -7,6 +7,7 @@ const CAMERA_X_LIMIT_UP = -1.39626 # deg_to_rad(-80.0)
 const CAMERA_X_LIMIT_DOWN = 1.39626 # deg_to_rad(80.0)
 @onready var camera = $Camera3D 
 @export var mouse_sensitivity: float = 0.005
+@onready var raycast = $Camera3D/RayCast3D
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -37,5 +38,11 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+		
+	if Input.is_action_just_pressed("Interact"):
+		if raycast.is_colliding():
+			var objeto = raycast.get_collider()
+			if objeto.has_method("interact"):
+				objeto.interact()
 
 	move_and_slide()

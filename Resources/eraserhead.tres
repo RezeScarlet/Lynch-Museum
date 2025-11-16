@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://pagb85onejco"]
+
+[ext_resource type="Texture2D" uid="uid://bi44htm5bdk2e" path="res://Assets/posters/eraserhead.jpg" id="1_5kdab"]
+[ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_fjlvl"]
+
+[resource]
+script = ExtResource("2_fjlvl")
+title = "Eraserhead"
+year = 1977
+synopsis = "Henry e Mary têm um bebê que nasceu prematuro e é desumano. Quando a mãe os abandona por não conseguir suportar seu terrível aspecto, Henry deve se esforçar para cumprir seu papel de pai solteiro."
+cover_image = ExtResource("1_5kdab")
+cast = Array[String](["Jack Nance", "Charlotte Stewart"])
+metadata/_custom_type_script = "uid://cnjsfrclrf3rg"

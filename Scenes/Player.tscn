@@ -18,3 +18,9 @@ debug_color = Color(1.353256, 0.40054685, 1.0601147, 0.99215686)
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.86103034, 0)
 current = true
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0033260584, 0)
+target_position = Vector3(0, 0, -3)
+collide_with_areas = true
+collide_with_bodies = false
