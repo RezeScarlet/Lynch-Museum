@@ -8,7 +8,7 @@ Este 'museu' interativo é uma homenagem a David Lynch e suas obras que moldaram
 
 ## 🎮 Jogue Agora (Navegador)
 Você pode jogar a versão Web exportada diretamente pelo **itch.io**, sem precisar baixar nada:
-👉 **[Clique aqui para jogar A Garden at Night](https://laosioor.itch.io/a-garden-at-night)**
+**[A Garden at Night](https://laosioor.itch.io/a-garden-at-night)**
 
 ---
 
