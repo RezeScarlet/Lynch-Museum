@@ -1,37 +1,33 @@
-[center]
-[b]A GARDEN AT NIGHT[/b]
+# A GARDEN AT NIGHT
 
-[i]Feito por:[/i]
-Aloísio e Clarisse
+> "Este 'museu' interativo é uma homenagem a David Lynch e suas obras que moldaram, e ainda moldam, nossos pensamentos, ideias e forma de olhar ao mundo de uma maneira um pouco mais doidinha."
 
+**Descanse em paz, David Lynch.**
 
-[u]__________________________[/u]
+---
 
-[b]MODELOS UTILIZADOS[/b]
-(Sketchfab)
+## 👥 Autores
+* **Aloísio**
+* **Clarisse**
 
-David Lynch por: yugengen
-DVD/Game Case por: Raphael Frei
-House interior por: Katydid
-Rabbits Set David Lynch por: Adrian-kats
-Twin Peaks FWWM - Black Lodge VR por: RyannMcCorkell
+## 🎓 Sobre o Projeto
+Este projeto foi desenvolvido para a matéria de **Computação Gráfica**, administrada pelo **Prof. Dr. Gabriel Marcelino Alves**, no **IFSP Câmpus São João da Boa Vista/SP**, em 2025.
 
+## 🧱 Créditos e Atribuições
 
-[u]__________________________[/u]
+### Modelos 3D (via Sketchfab)
+Todos os modelos foram utilizados sob licença Creative Commons.
 
-[b]ÁUDIOS E VÍDEO[/b]
-David Lynch being a madman for a relentless 8 minutes and 30 seconds
-por: cosmavoid
+* **David Lynch** por *yugengen*
+* **DVD/Game Case** por *Raphael Frei*
+* **House interior** por *Katydid*
+* **Rabbits Set David Lynch** por *Adrian-kats*
+* **Twin Peaks FWWM - Black Lodge VR** por *RyannMcCorkell*
 
+### Áudio e Vídeo
+* **Áudios extraídos de:** *David Lynch being a madman for a relentless 8 minutes and 30 seconds* (por cosmavoid)
 
-[u]__________________________[/u]
+---
 
-Este projeto foi desenvolvido para a matéria de Computação Gráfica administrada pelo Dr. Prof. Gabriel Marcelino Alves no IFSP Câmpus São João da Boa Vista/SP 2025
-
-
-[u]__________________________[/u]
-
-Este 'museu' interativo é uma homenagem a David Lynch e suas obras que moldaram, e ainda moldam, nossos pensamentos, idéias e forma de olhar ao mundo de uma maneira um pouco mais doidinha.
-
-[b]Descanse em paz, David Lynch.[/b]
-[/center]
+## 🛠️ Tecnologias
+* **Engine:** Godot 4
