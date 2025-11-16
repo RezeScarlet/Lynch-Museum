@@ -1,3 +1,10 @@
+AudioStreamPlayer2D
+MarginContainer
+RichTextLabel
+VBoxContainer
+ScrollContainer
+VideoStreamPlayer
+ColorRect
 AudioStreamPlayer3D
 CollisionShape3D
 Area3D
@@ -6,10 +13,3 @@ Label
 Node3D
 Node
 RayCast3D
-RichTextLabel
-VBoxContainer
-TextureRect
-HBoxContainer
-MarginContainer
-PanelContainer
-CanvasLayer

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://kedfpg6yj7bc"]
 
-[ext_resource type="Texture2D" uid="uid://d0fpkrtwwem0x" path="res://Assets/posters/inland-empire.jpg" id="1_3dkvv"]
+[ext_resource type="Texture2D" uid="uid://d0fpkrtwwem0x" path="res://Assets/Posters/inland-empire.jpg" id="1_3dkvv"]
 [ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_na0u8"]
 
 [resource]

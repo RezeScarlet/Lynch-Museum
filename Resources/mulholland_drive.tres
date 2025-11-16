@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://dpv3htdnu23qm"]
+
+[ext_resource type="Texture2D" uid="uid://bjbnyiiowvdve" path="res://Assets/Posters/mulholland-drive.jpg" id="1_rusgo"]
+[ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_geqhr"]
+
+[resource]
+script = ExtResource("2_geqhr")
+title = "Mulholland Drive"
+year = 2001
+synopsis = "Uma jovem atriz viaja para Hollywood e se vê emaranhada numa intriga secreta com uma mulher que escapou por pouco de ser assassinada, e que agora se encontra com amnésia devido a um acidente de carro. Seu mundo se torna um pesadelo e surreal."
+cover_image = ExtResource("1_rusgo")
+cast = Array[String](["Naomi Watts", "Laura Herring", "Justin Theroux"])
+metadata/_custom_type_script = "uid://cnjsfrclrf3rg"

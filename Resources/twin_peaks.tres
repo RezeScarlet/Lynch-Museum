@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://bm7u8imcfd3hb"]
 
-[ext_resource type="Texture2D" uid="uid://dumo4umrdp60r" path="res://Assets/posters/twin-peaks.webp" id="1_h4gdi"]
+[ext_resource type="Texture2D" uid="uid://dumo4umrdp60r" path="res://Assets/Posters/twin-peaks.webp" id="1_h4gdi"]
 [ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_js4v0"]
 
 [resource]

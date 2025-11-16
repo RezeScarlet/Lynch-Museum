@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://bovy21m037s3m"]
+
+[ext_resource type="Texture2D" uid="uid://b4jwrv5218ge7" path="res://Assets/Posters/straight-story.webp" id="1_y7tvf"]
+[ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_0imrr"]
+
+[resource]
+script = ExtResource("2_0imrr")
+title = "The Straight Story"
+year = 1999
+synopsis = "Idoso, ao saber que o irmão com quem brigou e que não vê há anos está doente, resolve ir visitá-lo e fazer as pazes. Como não tem carteira de habilitação, viaja quase 500 quilômetros dirigindo um cortador de grama."
+cover_image = ExtResource("1_y7tvf")
+cast = Array[String](["Richard Farnsworth", "Sissy Spacek", "Harry Dean Stanton"])
+metadata/_custom_type_script = "uid://cnjsfrclrf3rg"

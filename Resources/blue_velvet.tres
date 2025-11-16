@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://cj5eay0igt6fj"]
+
+[ext_resource type="Texture2D" uid="uid://bpvdnke3mm1on" path="res://Assets/Posters/blue-velvet.jpg" id="1_bagcd"]
+[ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_1nx7q"]
+
+[resource]
+script = ExtResource("2_1nx7q")
+title = "Blue Velvet"
+year = 1986
+synopsis = "Rapaz volta à cidade natal após longo tempo e descobre uma orelha humana decepada em um jardim. Insatisfeito com a investigação policial, ele e a filha do detetive encarregado começam a averiguar por conta própria, e descobrem coisas estranhas."
+cover_image = ExtResource("1_bagcd")
+cast = Array[String](["Kyle MacLachlan", "Laura Dern", "Dennis Hopper", "Isabella Rossellini"])
+metadata/_custom_type_script = "uid://cnjsfrclrf3rg"

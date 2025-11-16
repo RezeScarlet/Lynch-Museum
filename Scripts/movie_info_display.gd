@@ -25,7 +25,7 @@ func show_movie_info(data: MovieData):
 	set_process_input(true)
 
 func _input(event):
-	if event.is_action_pressed("Interact") or event.is_action_pressed("ui_cancel"):
+	if event.is_action_pressed("ui_cancel"):
 		close_display()
 		get_viewport().set_input_as_handled()
 			

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://dfbvd8ka4ds1j"]
+
+[ext_resource type="Texture2D" uid="uid://bwx8qpma1lu0y" path="res://Assets/Posters/dune.webp" id="1_km5o0"]
+[ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_p6qu0"]
+
+[resource]
+script = ExtResource("2_p6qu0")
+title = "Dune"
+year = 1984
+synopsis = "A ascensão messiânica do guerreiro intergaláctico Paul Atreides a líder de seu povo e a sua luta pela sobrevivência. O jovem herói lidera seus guerreiros contra um barão perverso e tenta destruir em toda a galáxia o comércio da especiaria, que é uma droga alucinógena produzida no planeta deserto."
+cover_image = ExtResource("1_km5o0")
+cast = Array[String](["Kyle MacLachlan", "Francesca Annis", "Patrick Stewart"])
+metadata/_custom_type_script = "uid://cnjsfrclrf3rg"

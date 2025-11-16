@@ -10,10 +10,28 @@ config_version=5
 
 [application]
 
-config/name="Museum"
+config/name="A Garden at Night"
+config/description="A GARDEN AT NIGHT
+
+Feito por: Aloísio e Clarisse
+
+Este projeto foi desenvolvido para a matéria de Computação Gráfica administrada pelo Dr. Prof. Gabriel Marcelino Alves no IFSP Câmpus São João da Boa Vista/SP 2025
+
+Este 'museu' interativo é uma homenagem a David Lynch e suas obras que moldaram, e ainda moldam, nossos pensamentos, idéias e forma de olhar ao mundo de uma maneira um pouco mais doidinha.
+
+Descanse em paz, David Lynch."
 run/main_scene="uid://b0jemvimgri7m"
+run/print_header=false
 config/features=PackedStringArray("4.5", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://cb8fvtbymxyda"
+
+[autoload]
+
+GameManager="*res://Scripts/GameManager.gd"
+
+[display]
+
+window/size/mode=3
 
 [input]
 

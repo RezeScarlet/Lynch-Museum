@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://spwby42p200b"]
+
+[ext_resource type="Texture2D" uid="uid://bma0cslprnla7" path="res://Assets/Posters/lost-highway.jpg" id="1_ercl1"]
+[ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_aj6ca"]
+
+[resource]
+script = ExtResource("2_aj6ca")
+title = "Lost Highway"
+year = 1997
+synopsis = "Um músico é acusado de assassinar sua esposa em casa. Ele sabe que não foi ele, mas ao ver as fitas da câmera de segurança, sua opinião muda, e não consegue entender o que aconteceu até descobrir a verdade."
+cover_image = ExtResource("1_ercl1")
+cast = Array[String](["Bill Pullman", "Patricia Arquette", "Robert Blake"])
+metadata/_custom_type_script = "uid://cnjsfrclrf3rg"

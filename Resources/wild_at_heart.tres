@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://bna6el7vl7ut5"]
+
+[ext_resource type="Texture2D" uid="uid://dkjc6bg54atdx" path="res://Assets/Posters/wild-at-heart.jpg" id="1_lfun8"]
+[ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_gdgjn"]
+
+[resource]
+script = ExtResource("2_gdgjn")
+title = "Wild at Heart"
+year = 1990
+synopsis = "Depois de passar um tempo na prisão, Sailor Ripley reencontra sua namorada, Lula Fortune, e o casal viaja para a Califórnia. A mãe de Lula não aceita o relacionamento e contrata um assassino profissional para matar Sailor."
+cover_image = ExtResource("1_lfun8")
+cast = Array[String](["Nicolas Cage", "Laura Dern", "Willem Dafoe"])
+metadata/_custom_type_script = "uid://cnjsfrclrf3rg"

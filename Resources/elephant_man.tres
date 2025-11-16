@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MovieData" load_steps=3 format=3 uid="uid://ql06y1b2jdd6"]
+
+[ext_resource type="Texture2D" uid="uid://bvmfrku0obixs" path="res://Assets/Posters/elephant-man.webp" id="1_rym8a"]
+[ext_resource type="Script" uid="uid://cnjsfrclrf3rg" path="res://Scripts/movie_data.gd" id="2_ivfva"]
+
+[resource]
+script = ExtResource("2_ivfva")
+title = "The Elephant Man"
+year = 1980
+synopsis = "John Merrick nasceu desfigurado e parecia estar condenado a uma triste existência como atração de um show de aberrações. Porém, um cirurgião londrino o introduziu à sociedade. Apesar de suas dolorosas experiências, Merrick é gentil e inteligente e se torna convidado frequente nos salões vitorianos, mas precisa cobrir totalmente as feições deformadas."
+cover_image = ExtResource("1_rym8a")
+cast = Array[String](["John Hurt", "Anthony Hopkins", "Anne Bancroft"])
+metadata/_custom_type_script = "uid://cnjsfrclrf3rg"

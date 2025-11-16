@@ -1,0 +1,107 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtl7ttf3s6lhn"]
+
+[ext_resource type="Script" uid="uid://bqmdv78le0ch8" path="res://Scripts/creditos.gd" id="1_fktwv"]
+[ext_resource type="VideoStream" uid="uid://rd7wwyaoywn1" path="res://Assets/Videos/lynch-precredits.ogv" id="2_624yc"]
+[ext_resource type="AudioStream" uid="uid://dyg0d2ay5pwjw" path="res://Assets/Audios/twin-peaks-intro.mp3" id="3_qboac"]
+
+[node name="Creditos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fktwv")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_624yc")
+autoplay = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_qboac")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+clip_contents = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 650
+theme_override_constants/margin_top = 1200
+theme_override_constants/margin_right = 650
+theme_override_constants/margin_bottom = 2000
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[center]
+[b]A GARDEN AT NIGHT[/b]
+
+[i]Feito por:[/i]
+Aloísio e Clarisse
+
+
+[u]__________________________[/u]
+
+[b]MODELOS UTILIZADOS[/b]
+(Sketchfab)
+
+David Lynch por: yugengen
+DVD/Game Case por: Raphael Frei
+House interior por: Katydid
+Rabbits Set David Lynch por: Adrian-kats
+Twin Peaks FWWM - Black Lodge VR por: RyannMcCorkell
+
+
+[u]__________________________[/u]
+
+[b]ÁUDIOS E VÍDEO[/b]
+David Lynch being a madman for a relentless 8 minutes and 30 seconds
+por: cosmavoid
+
+
+[u]__________________________[/u]
+
+Este projeto foi desenvolvido para a matéria de Computação Gráfica administrada pelo Dr. Prof. Gabriel Marcelino Alves no IFSP Câmpus São João da Boa Vista/SP 2025
+
+
+[u]__________________________[/u]
+
+Este 'museu' interativo é uma homenagem a David Lynch e suas obras que moldaram, e ainda moldam, nossos pensamentos, idéias e forma de olhar ao mundo de uma maneira um pouco mais doidinha.
+
+[b]Descanse em paz, David Lynch.[/b]
+[/center]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 2
+autowrap_trim_flags = 0
