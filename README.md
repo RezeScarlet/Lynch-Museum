@@ -1,6 +1,6 @@
 # A GARDEN AT NIGHT
 
-> "Este 'museu' interativo é uma homenagem a David Lynch e suas obras que moldaram, e ainda moldam, nossos pensamentos, ideias e forma de olhar ao mundo de uma maneira um pouco mais doidinha."
+Este 'museu' interativo é uma homenagem a David Lynch e suas obras que moldaram, e ainda moldam, nossos pensamentos, ideias e forma de olhar ao mundo de uma maneira um pouco mais doidinha.
 
 **Descanse em paz, David Lynch.**
 
